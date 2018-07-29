@@ -1,12 +1,3 @@
-/*
-   This examples shows how to make a simple seven keys MIDI keyboard with volume control
-
-   Created: 4/10/2015
-   Author: Arturo Guadalupi <a.guadalupi@arduino.cc>
-   
-   http://www.arduino.cc/en/Tutorial/MidiDevice
-*/
-
 #include "MIDIUSB.h"
 #include "PitchToNote.h"
 #include "RotaryEncoder.h"
