@@ -1,0 +1,46 @@
+<Template>
+    <WidgetGroup>
+		<ObjectName>Library</ObjectName>
+		<SizePolicy>me,me</SizePolicy>
+		<MinimumSize>1,1</MinimumSize>
+		<Layout>vertical</Layout>
+		<Children>
+			<!--
+			**********************************************
+			Library / Preview Deck / Search / Tree view
+			**********************************************
+			-->
+			<WidgetGroup>
+				<Layout>horizontal</Layout>
+				<Children>
+
+							<WidgetGroup>
+								<Style>QGroupBox {}</Style>
+								<Layout>vertical</Layout>
+								<Children>
+									<!--Library Tree View-->
+									<LibrarySidebar>
+										<SizePolicy>me,me</SizePolicy>
+										<MinimumSize>200,1</MinimumSize>
+									</LibrarySidebar>
+								</Children>
+							</WidgetGroup>
+							<WidgetGroup>
+								<!-- Library Table-->
+								<Style>QGroupBox {}</Style>
+								<Layout>vertical</Layout>
+								<Children>
+									<Library>
+										<BgColor>#585858</BgColor>
+										<FgColor>#eece33</FgColor>
+										<!--<BgColor>#FFFFFF</BgColor>
+										<FgColor>#eece33</FgColor>-->
+										
+									</Library>
+								</Children>
+							</WidgetGroup>
+				</Children>
+			</WidgetGroup>
+		</Children>
+	</WidgetGroup>
+</Template>

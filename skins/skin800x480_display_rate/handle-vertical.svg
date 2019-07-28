@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="100" width="200" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata12">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect id="rect4137" style="fill:#333" rx="1.4066" ry="2.4844" height="80.61" width="181.73" y="9.6949" x="9.1368"/>
+ <path id="path4205" style="fill:#d2d2d2" d="m22.273 22.273v55.454h155.46v-55.454h-155.46zm20.227 12.727h115v30h-115v-30z"/>
+ <rect id="rect4151" style="fill:#489aff" height="15" width="100" y="42.5" x="50"/>
+ <path id="rect4194" style="fill:#d2d2d2" d="m20 0c-11.08 0-20 8.92-20 20v60c0 11.08 8.92 20 20 20h160c11.08 0 20-8.92 20-20v-60c0-11.08-8.92-20-20-20h-160zm0 12.021h160c4.63 0 7.98 3.351 7.98 7.979v60c0 4.628-3.35 7.979-7.98 7.979h-160c-4.628 0-7.979-3.351-7.979-7.979v-60c0-4.628 3.351-7.979 7.979-7.979z"/>
+</svg>

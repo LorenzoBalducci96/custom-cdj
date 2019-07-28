@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="200" width="100" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata12">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect id="rect4138" style="fill:#333" rx="2.4095" ry="7.3181" height="183.47" width="83.475" y="8.2627" x="8.2627"/>
+ <g id="g5260" transform="matrix(0 1 -1 0 54.237 -177.12)">
+  <path id="path4205" style="fill:#d2d2d2" d="m199.39-23.489v55.453h155.45v-55.453h-155.45zm20.227 12.727h115v30h-115v-30z"/>
+  <rect id="rect4151" style="fill:#489aff" height="15" width="100" y="-3.2627" x="227.12"/>
+  <path id="rect4194" style="fill:#d2d2d2" d="m197.12-45.763c-11.08 0-20 8.92-20 20v60c0 11.08 8.92 20 20 20h160c11.08 0 20-8.92 20-20v-60c0-11.08-8.92-20-20-20h-160zm0 12.021h160c4.6284 0 7.9785 3.3501 7.9785 7.9785v60c0 4.6284-3.3501 7.9785-7.9785 7.9785h-160c-4.6284 0-7.9785-3.3501-7.9785-7.9785v-60c0-4.6284 3.3501-7.9785 7.9785-7.9785z"/>
+ </g>
+</svg>

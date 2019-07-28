@@ -1,0 +1,120 @@
+<!DOCTYPE template>
+<!--
+  Description:
+    Deck overview row (overview and option grid)
+  Variables:
+    group: the group to connect to
+-->
+<Template>
+  <WidgetGroup>
+    <ObjectName>OverviewRow</ObjectName>
+    <Layout>horizontal</Layout>
+    <SizePolicy>me,max</SizePolicy>
+    <MinimumSize>-1,80</MinimumSize>
+    <MaximumSize>-1,120</MaximumSize>
+    <Children>
+      <Overview>
+        <TooltipId>waveform_overview</TooltipId>
+        <Group><Variable name="group"/></Group>
+        <SizePolicy>me,me</SizePolicy>
+        <BgColor></BgColor>
+        <SignalHighColor></SignalHighColor>
+        <SignalMidColor></SignalMidColor>
+        <SignalLowColor></SignalLowColor>
+        <SignalRGBHighColor></SignalRGBHighColor>
+        <SignalRGBMidColor></SignalRGBMidColor>
+        <SignalRGBLowColor></SignalRGBLowColor>
+        <SignalColor><Variable name="DeckSignalColor"/></SignalColor>
+        <PlayPosColor>#00FF00</PlayPosColor>
+        <DefaultMark>
+          <Align>bottom</Align>
+          <Color>#00FF00</Color>
+          <TextColor>#FFFFFF</TextColor>
+          <Text> %1 </Text>
+        </DefaultMark>
+        <MarkRange>
+          <StartControl>loop_start_position</StartControl>
+          <EndControl>loop_end_position</EndControl>
+          <EnabledControl>loop_enabled</EnabledControl>
+          <Color>#00FF00</Color>
+          <DisabledColor>#FFFFFF</DisabledColor>
+        </MarkRange>
+        <Mark>
+          <Control>cue_point</Control>
+          <Align>top</Align>
+          <Color>#FF001C</Color>
+          <TextColor>#FFFFFF</TextColor>
+          <Text>C</Text>
+        </Mark>
+        <Connection>
+          <ConfigKey><Variable name="group"/>,playposition</ConfigKey>
+          <EmitOnDownPress>false</EmitOnDownPress>
+        </Connection>
+      </Overview>
+      <WidgetGroup>
+        <ObjectName>OptionGrid</ObjectName>
+        <Layout>vertical</Layout>
+        <SizePolicy>min,me</SizePolicy>
+        <MinimumSize>120,40</MinimumSize>
+        <MaximumSize>240,80</MaximumSize>
+        <Children>
+          
+
+          <WidgetGroup>
+            <ObjectName>OptionGridRow2</ObjectName>
+            <Layout>horizontal</Layout>
+            <SizePolicy>p,me</SizePolicy>
+            <MinimumSize>120,20</MinimumSize>
+            <MaximumSize>240,80</MaximumSize>
+            <Children>
+              <Template src="skin:left_2state_button.xml">
+                <SetVariable name="TooltipId">quantize</SetVariable>
+                <SetVariable name="ObjectName">QuantizeButton</SetVariable>
+                <SetVariable name="MinimumSize"><Variable name="MediumSquareButtonMinimumSize"/></SetVariable>
+                <SetVariable name="MaximumSize"><Variable name="MediumSquareButtonMaximumSize"/></SetVariable>
+                <SetVariable name="SizePolicy"><Variable name="MediumSquareButtonSizePolicy"/></SetVariable>
+                <SetVariable name="state_0_text"></SetVariable>
+                <SetVariable name="state_0_pressed">icon/ic_quantize_48px.svg</SetVariable>
+                <SetVariable name="state_0_unpressed">icon/ic_quantize_48px.svg</SetVariable>
+                <SetVariable name="state_1_text"></SetVariable>
+                <SetVariable name="state_1_pressed">icon/ic_quantize_48px.svg</SetVariable>
+                <SetVariable name="state_1_unpressed">icon/ic_quantize_48px.svg</SetVariable>
+                <SetVariable name="left_connection_control"><Variable name="group"/>,quantize</SetVariable>
+              </Template>
+
+              <Template src="skin:left_2state_button.xml">
+                <SetVariable name="TooltipId">keylock</SetVariable>
+                <SetVariable name="ObjectName">KeylockButton</SetVariable>
+                <SetVariable name="MinimumSize"><Variable name="MediumSquareButtonMinimumSize"/></SetVariable>
+                <SetVariable name="MaximumSize"><Variable name="MediumSquareButtonMaximumSize"/></SetVariable>
+                <SetVariable name="SizePolicy"><Variable name="MediumSquareButtonSizePolicy"/></SetVariable>
+                <SetVariable name="state_0_text"></SetVariable>
+                <SetVariable name="state_0_pressed">icon/ic_key_48px.svg</SetVariable>
+                <SetVariable name="state_0_unpressed">icon/ic_key_48px.svg</SetVariable>
+                <SetVariable name="state_1_text"></SetVariable>
+                <SetVariable name="state_1_pressed">icon/ic_key_48px.svg</SetVariable>
+                <SetVariable name="state_1_unpressed">icon/ic_key_48px.svg</SetVariable>
+                <SetVariable name="left_connection_control"><Variable name="group"/>,keylock</SetVariable>
+              </Template>
+
+              <Template src="skin:left_2state_button.xml">
+                <SetVariable name="TooltipId">slip_mode</SetVariable>
+                <SetVariable name="ObjectName">SlipModeButton</SetVariable>
+                <SetVariable name="MinimumSize"><Variable name="MediumSquareButtonMinimumSize"/></SetVariable>
+                <SetVariable name="MaximumSize"><Variable name="MediumSquareButtonMaximumSize"/></SetVariable>
+                <SetVariable name="SizePolicy"><Variable name="MediumSquareButtonSizePolicy"/></SetVariable>
+                <SetVariable name="state_0_text"></SetVariable>
+                <SetVariable name="state_0_pressed">icon/ic_slip_48px.svg</SetVariable>
+                <SetVariable name="state_0_unpressed">icon/ic_slip_48px.svg</SetVariable>
+                <SetVariable name="state_1_text"></SetVariable>
+                <SetVariable name="state_1_pressed">icon/ic_slip_48px.svg</SetVariable>
+                <SetVariable name="state_1_unpressed">icon/ic_slip_48px.svg</SetVariable>
+                <SetVariable name="left_connection_control"><Variable name="group"/>,slip_enabled</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>
