@@ -2,7 +2,7 @@
 
 USBMIDI_Interface midi;
 
-CCAbsoluteEncoder enc = {
+CCAbsoluteEncoder jogwheel = {
   {9, 10},       // pins
   MIDI_CC::Pan, // MIDI address (CC number + optional channel)
   1,            // optional multiplier if the control isn't fast enough
